@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="store.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <p>
+            <ul class="top">
+                <li>
+                    <a href="http://127.0.0.1:5500/home.html">
+                       Home
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/home.html#Lorem_Ipsum">
+                        About Us
+                     </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/store.html">
+                        Our Products
+                    </a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/store.html#content">
+                        <img id="cart" src="sc.png">
+                    </a>
+                </li>
+            </ul>
+            </p>
+        </header>
+        <h1>
+         Lorem Coffee Co.
+        </h1>
+
+
+        
+
+        <div id="productsr1">
+            <div id="cell1">
+    
+                <img src="cofbag.png">
+                <text>Product #1 - $14</text>
+
+                <button id="hidden" onclick="add1(); myFunc1()">Add to Cart</button>
+                
+            </div>
+
+            <div id="cell2">
+                <img src="cofbag2.png">
+                <text>Product #2 - $19</text>
+                <button id="hidden" onclick=" add2(); myFunc2()">Add to Cart</button>
+            </div>
+            
+    
+            <div id="cell3">
+                <img src="cofbag3.png">
+                <text>Product #3 - $16</text>
+                <button id="hidden" onclick=" add3(); myFunc3()">Add to Cart</button>
+            </div>
+
+        
+
+
+           
+        </div>
+
+        <br>
+        
+
+        <div id="productsr2">
+            <div id="cell4">
+                <img src="cof4.png">
+                <text>Product #4 - $19</text>
+                <button id="hidden" onclick="add4(); myFunc4()">Add to Cart</button>
+            </div>
+
+            <div id="cell5">
+                <img src="cof5.png">
+                <text>Product #5 - $14</text>
+                <button id="hidden" onclick="add5(); myFunc5()">Add to Cart</button>
+            </div>
+            
+    
+            <div id="cell6">
+                <img src="cof6.png">
+                <text>Product #6 - $12</text>
+                <button id="hidden" onclick="add6(); myFunc6()">Add to Cart</button>
+            </div>
+
+
+
+        </div>
+        <br>
+
+        
+        <div id="productsr3">
+            <div id="cell7">
+                <img src="cof7.png">
+                <text>Product #7 - $16</text>
+                <button id="hidden" onclick="add7(); myFunc7()">Add to Cart</button>
+            </div>
+
+            <div id="cell8">
+                <img src="cof8.png">
+                <text>Product #8 - $19</text>
+                <button id="hidden" onclick="add8(); myFunc8()">Add to Cart</button>
+            </div>
+            
+    
+            <div id="cell9">
+                <img src="cof9.png">
+                <text>Product #9 - $16</text>
+                <button id="hidden" onclick="add9(); myFunc9()">Add to Cart</button>
+            </div>
+        </div>
+        <br>
+
+
+        <div id="content">
+            <h2>
+                Your Cart - 
+            </h2>
+
+            <ul>
+                <div id="itemdiv">
+                    <img id="hiddenimg" width="100px" height="100px" src="cofbag.png">
+                
+                  <li  id="items1" >
+                  </li>
+                  <button onclick="del1(); sub1()" id="del1">Remove</button>
+                </div>
+  
+
+                <div id="itemdiv" style="display:flex;">
+                    <img id="hiddenimg2" width="100px" height="100px" src="cofbag2.png">
+                  <li  id="items2">
+                  </li>
+                  <button onclick="del2(); sub2()" id="del2">Remove</button>
+                
+                </div>
+
+                <div  id="itemdiv" style="display:flex;">
+                    <img id="hiddenimg3" width="100px" height="100px" src="cofbag3.png">
+                  <li  id="items3">
+                  </li>
+                  <button onclick="del3(); sub3()" id="del3">Remove</button>
+                
+                </div>
+
+                <div id="itemdiv" style="display:flex;">
+                    <img id="hiddenimg4" width="100px" height="100px" src="cof4.png">
+                  <li  id="items4">
+                  </li>
+                  <button onclick="del4(); sub4()" id="del4">Remove</button>
+                
+                </div>
+  
+                <div id="itemdiv" style="display:flex;">
+                    <img id="hiddenimg5" width="100px" height="100px" src="cof5.png">
+                  <li  id="items5">
+                  </li>
+                  <button onclick="del5(); sub5()" id="del5">Remove</button>
+                
+                </div>
+  
+                <div id="itemdiv" style="display:flex;">
+                    <img id="hiddenimg6" width="100px" height="100px" src="cof6.png">
+                  <li  id="items6">
+                  </li>
+                  <button onclick="del6(); sub6()" id="del6">Remove</button>
+                
+  
+                </div>
+
+                <div id="itemdiv" style="display:flex;">
+                    <img id="hiddenimg7" width="100px" height="100px" src="cof7.png">
+                  <li  id="items7">
+                  </li>
+                  <button onclick="del7(); sub7()" id="del7">Remove</button>
+  
+                </div>
+  
+  
+                <div id="itemdiv" style="display:flex;">
+                    <img id="hiddenimg8" width="100px" height="100px" src="cof8.png">
+                  <li  id="items8">
+                  </li>
+  
+                  <button onclick="del8(); sub8()" id="del8">Remove</button>
+                
+                </div>
+  
+  
+                <div id="itemdiv" style="display:flex;">
+                    <img id="hiddenimg9" width="100px" height="100px" src="cof9.png">
+                  <li  id="items9">
+                  </li>
+
+                  <button onclick="del9(); sub9()" id="del9">Remove</button>
+                
+                </div>
+  
+
+
+
+
+            </ul>
+    
+
+            <div class="total">
+                <h3 id="total">
+                    Total: $
+                </h3>
+                <h3 id="money">
+                    0
+                </h3>
+            </div>
+            
+            <button onclick="alertBuy()" id="order">
+                Order
+            </button>
+        </div>
+
+
+
+        
+    
+
+
+
+        <footer>
+            <p>
+                <ul id="bottom" class="bottom">
+                    <li>
+                        <a href="http://127.0.0.1:5500/policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/terms.html">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/californiadata.html">
+                            Do not sell my data (California)
+                        </a>
+                    </li>
+                </ul>
+            </p>
+        </footer>
+    
+</header>
+
+
+
+</body>
+</html>
